@@ -1,0 +1,31 @@
+#!/bin/bash
+
+user=$1
+now=$(who)
+
+if [ $# -ne 1 ]
+then 
+   echo "인수가 1개가 아님, 1개의 인수만 입력 가능"
+   exit 1
+fi
+
+log=(cut -f1 who)
+
+for var in log
+do
+if [ $var = $user ]
+  then
+	echo "$user 로그인함!"
+	break;
+else
+	sleep 60
+fi
+done
+  
+                       
+      
+                 
+     
+          
+
+    
