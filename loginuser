@@ -22,7 +22,7 @@ do
 if [ $var = $user ]
   then
 	echo "$user 로그인함!"
-	break;
+	break
 else
 	sleep 60
 fi
